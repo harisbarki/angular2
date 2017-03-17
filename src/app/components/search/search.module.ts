@@ -3,17 +3,12 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
-import {AppComponent} from './app.component';
-import {SearchComponent} from './components/search/search.component';
-import {AboutComponent} from './components/about/about.component';
-import {NavbarComponent} from './components/navbar/navbar.component';
+import {SearchComponent} from './search.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
     SearchComponent,
-    AboutComponent,
-    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +16,7 @@ import {NavbarComponent} from './components/navbar/navbar.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [SearchComponent]
 })
-export class AppModule {
+export class SearchModule {
 }
