@@ -1,18 +1,20 @@
-# MySol
+# Angular2 Seed
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+Run `npm run start:dev` for a dev live-reload server. The app will automatically reload if you change any of the source files.
+Run `npm run start:dev:hmr` for a dev hmr server. This will enable hot module reloading.
+Run `npm run start:aot` for a dev aot server. Ahead of time compilation.
+Run `npm run start:prod` for a prod server. Production code dev server. Not to be used as production server as it has not been tested for security.
+Navigate to `http://localhost:4200/`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `npm run build:dev` to build the dev project. 
+Run `npm run build:prod` to build the dev project. 
+The build artifacts will be stored in the `dist/` directory. 
 
 ## Running unit tests
 
