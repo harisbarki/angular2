@@ -1,22 +1,25 @@
-import {BrowserModule} from '@angular/platform-browser';
+import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 import {SearchComponent} from './search.component';
+import {routes} from './search.routes';
 
+console.log('lazy loaded');
 
 @NgModule({
   declarations: [
     SearchComponent,
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routes
   ],
-  providers: [],
-  bootstrap: [SearchComponent]
+  // providers: [],
+  // bootstrap: [SearchComponent]
 })
 export class SearchModule {
 }

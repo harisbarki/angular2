@@ -2,8 +2,13 @@
   {{title}}
 </h1>
 
-<div class="container">
-  helllosfafas uupfffdfadsf
-</div>
-
-<button class="btn btn-primary">asdasd</button>
+<a [routerLink]=" ['search'] "
+   routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+  Search
+</a>
+<a [routerLink]=" ['about'] "
+   routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+  About
+</a>
+<br>
+<router-outlet></router-outlet>
