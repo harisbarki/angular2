@@ -4,27 +4,29 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
-import {AboutComponent} from './components/about/about.component';
-import {NavbarComponent} from './components/navbar/navbar.component';
-import {NoContentComponent} from './components/no-content/no-content.component'
+import {AboutComponent, HomeComponent, NavbarComponent, NoContentComponent, LoginComponent} from './components/';
+import {SearchModule} from './modules/search/search.module';
 import {routes} from './app.routes';
 
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    AboutComponent,
-    NavbarComponent,
-    NoContentComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    routes
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		AboutComponent,
+		NavbarComponent,
+		LoginComponent,
+		NoContentComponent
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		HttpModule,
+		// SearchModule,
+		routes
+	],
+	providers: [
+	],
+	bootstrap: [AppComponent]
 })
 export class AppModule {
 }

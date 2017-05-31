@@ -1,14 +1,14 @@
-import { MySolPage } from './app.po';
+import {MySolPage} from './app.po';
 
 describe('my-sol App', () => {
-  let page: MySolPage;
+	let page: MySolPage;
 
-  beforeEach(() => {
-    page = new MySolPage();
-  });
+	beforeEach(() => {
+		page = new MySolPage();
+	});
 
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
+	it('should display message saying app works', () => {
+		page.navigateTo();
+		expect(page.getParagraphText()).toEqual('app works!');
+	});
 });
