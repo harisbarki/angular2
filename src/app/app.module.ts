@@ -5,7 +5,6 @@ import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
 import {AboutComponent, HomeComponent, NavbarComponent, NoContentComponent, LoginComponent} from './components/';
-import {SearchModule} from './modules/search/search.module';
 import {routes} from './app.routes';
 
 @NgModule({
@@ -21,7 +20,6 @@ import {routes} from './app.routes';
 		BrowserModule,
 		FormsModule,
 		HttpModule,
-		// SearchModule,
 		routes
 	],
 	providers: [
