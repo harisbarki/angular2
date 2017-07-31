@@ -4,7 +4,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 import {SearchComponent} from './search.component';
-import {routes} from './search.routes';
+import {AppRoutingModule} from './search.routes';
 
 console.log('lazy loaded');
 
@@ -16,7 +16,7 @@ console.log('lazy loaded');
 		CommonModule,
 		FormsModule,
 		HttpModule,
-		routes
+		AppRoutingModule
 	],
 	// providers: [],
 	// bootstrap: [SearchComponent]
