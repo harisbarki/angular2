@@ -1,7 +1,8 @@
+import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {AboutComponent, HomeComponent, NoContentComponent, LoginComponent} from './components/'
 
-const appRoutes: Routes = [
+const routes: Routes = [
 	{path: '', component: HomeComponent},
 	{path: 'about', component: AboutComponent},
 	{path: 'login', component: LoginComponent},
@@ -9,4 +10,9 @@ const appRoutes: Routes = [
 	{path: '**', component: NoContentComponent}
 ];
 
-export const routes = RouterModule.forRoot(appRoutes);
+@NgModule({
+	imports: [RouterModule.forRoot(routes, {useHash: true})],
+	exports: [RouterModule],
+})
+export class AppRoutingModule {
+}
